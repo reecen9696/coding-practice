@@ -1,7 +1,7 @@
 // ========================
 // 🔎 1. Quick File Navigation
 // ========================
-// Quickly open another file in your project.
+// Quickly open another file in your project & then come back!
 // Cmd + P
 // 👉 Practice: Find SHORTCUTS.md
 
@@ -10,20 +10,22 @@
 // ========================
 // Highlight this line line below without touching the mouse & delete the line!
 // Shift + ↓
-console.log("DELETE ME!");
+
+//DELETE THIS DAMN LINE YO
 
 // ========================
 // 📝 3. Highlighting & Selection
 // ========================
-// Place your cursor in the middle of the line below.
+// Copy selectionExample and then half of wordSelection!.
+// Shift + →
 // Shift + Option + →
 const selectionExample = "wordSelection";
 
 // ========================
 // 📝 4. Highlighting & Selection
 // ========================
-//Cmd + D
 // Select all occurrences of the word "duplicate" and rename them all at once.
+//Cmd + D (click D repeatedly)
 const duplicate = 1;
 const duplicateValue = duplicate + 2;
 console.log(duplicate);
@@ -32,7 +34,7 @@ console.log(duplicate);
 // 🖊️ 5. Renaming
 // ========================
 // Globe + F2
-// Place your cursor on the variable "renameMe" and rename it.
+// Place your cursor on the variable "renameMe" and rename it to "renameYou".
 const renameMe = "Old Name";
 console.log(renameMe);
 
