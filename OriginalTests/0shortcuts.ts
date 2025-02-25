@@ -8,7 +8,7 @@
 // ========================
 // 📝 2. Highlighting & Selection
 // ========================
-// Highlight this line line below without touching the mouse & delete the line!
+// Highlight the line below without touching the mouse & then delete the line!
 // Shift + ↓
 
 //DELETE THIS DAMN LINE YO
@@ -16,7 +16,7 @@
 // ========================
 // 📝 3. Highlighting & Selection
 // ========================
-// Copy selectionExample and then half of wordSelection!.
+// Delete selectionExample and then half of wordSelection!.
 // Shift + →
 // Shift + Option + →
 const selectionExample = "wordSelection";
@@ -24,7 +24,7 @@ const selectionExample = "wordSelection";
 // ========================
 // 📝 4. Highlighting & Selection
 // ========================
-// Select all occurrences of the word "duplicate" and rename them all at once.
+// Select all occurrences of the word "duplicate" and rename to "singles" them all at once.
 //Cmd + D (click D repeatedly)
 const duplicate = 1;
 const duplicateValue = duplicate + 2;
@@ -96,3 +96,18 @@ console.log("Delete this line using Cmd + Backspace");
 // Fn + Delete
 // Delete forward in the middle of this text.
 const forwardDelete = "Remove part of this text forward";
+
+// ========================
+// 📁 14. File Navigation & Management
+// ========================
+// Cmd + Shift + E / Folder navigation
+// Enter / Rename
+// Cmd + Shift + N / Create a new file
+// Enter / Open in Editor
+// Cmd + P / Return to file
+
+// 1️⃣ Navigate to the folder {PracticeFolder} using the sidebar.
+// 2️⃣ Rename the file {rename.ts} to {newName.ts} while the file is selected.
+// 3️⃣ Create a new file named {newFile.ts} inside the {Tests} folder.
+// 4️⃣ Open {newFile.ts} in the editor.
+// 5️⃣ Return to {0shortcut.ts} using quick file navigation and open it.
