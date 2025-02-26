@@ -1,5 +1,5 @@
 // ========================
-// 📦  CONCEPT: Interfaces
+// 📦 CONCEPT: Interfaces
 // 🏷️ NAME: userSummary
 // ========================
 
@@ -19,15 +19,7 @@
 
 // ========================================================================
 // 📝 YOUR ANSWER:
-export interface User {
-  name: string;
-  age: number;
-}
 
-export function userSummary(user: User): string {
-  // Your code here
-  return "Reece";
-}
 // ========================================================================
 
 // 🏷️ TEST: userSummary

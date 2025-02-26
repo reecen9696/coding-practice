@@ -15,10 +15,7 @@
 // ========================================================================
 
 // 📝 YOUR ANSWER:
-export function greet(name: string): string {
-  // Your code here
-  return "hi";
-}
+
 // ========================================================================
 
 console.log("✅ TEST RESULTS ✅");

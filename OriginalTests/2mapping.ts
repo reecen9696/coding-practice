@@ -7,22 +7,24 @@
 // Create a function named "doubleNumbers" that takes an array of numbers
 // and returns a new array with all elements doubled.
 
+// export function doubleNumbers(numbers: number[]): number[] {
+//   // Your code here
+//   return [1];
+// }
+
 // 🧩 GENERIC ARRAY:
 // Divide
-// numbers.map(num => num / 9);
+// const divide = numbers.map(num => num / 9);
 
 // Square
-// numbers.map(num => num ** 2)
+// const square = numbers.map(num => num ** 2)
 
 // Extract values
-// users.map(user => user.name)
+// const values = users.map(user => user.name)
 
 // ========================================================================
 // 📝 YOUR ANSWER:
-export function doubleNumbers(numbers: number[]): number[] {
-  // Your code here
-  return [1];
-}
+
 // ========================================================================
 
 // 📦 TEST: doubleNumbers

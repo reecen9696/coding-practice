@@ -14,11 +14,20 @@
 //DELETE THIS DAMN LINE YO
 
 // ========================
+// 📝 Highlighting & Selection - line
+// ========================
+// Highlight the line below without touching the mouse & then delete the line!
+// Shift + command + ↓
+
+//DELETE THIS DAMN LINE YO
+
+// ========================
 // 📝 3. Highlighting & Selection
 // ========================
 // Delete selectionExample and then half of wordSelection!.
-// Shift + →
 // Shift + Option + →
+// Shift + →
+
 const selectionExample = "wordSelection";
 
 // ========================
@@ -33,7 +42,7 @@ console.log(duplicate);
 // ========================
 // 🖊️ 5. Renaming
 // ========================
-// Globe + F2
+// fn + F2
 // Place your cursor on the variable "renameMe" and rename it to "renameYou".
 const renameMe = "Old Name";
 console.log(renameMe);
@@ -101,6 +110,7 @@ const forwardDelete = "Remove part of this text forward";
 // 📁 14. File Navigation & Management
 // ========================
 // Cmd + Shift + E / Folder navigation
+// Cmd + Shift + E / Return from Folder navigation
 // Enter / Rename
 // Cmd + Shift + N / Create a new file
 // Enter / Open in Editor
@@ -111,3 +121,17 @@ const forwardDelete = "Remove part of this text forward";
 // 3️⃣ Create a new file named {newFile.ts} inside the {Tests} folder.
 // 4️⃣ Open {newFile.ts} in the editor.
 // 5️⃣ Return to {0shortcut.ts} using quick file navigation and open it.
+
+// ========================
+// 📁 15. Next Tab Previous tab
+// ========================
+// Control + Tab
+// Control + shift + Tab
+// Move forward one tab & back one tab
+
+// ========================
+// 📁 16. Terminal
+// ========================
+// Control + ``
+// Control + 1
+// Go to terminal and then go back to code
