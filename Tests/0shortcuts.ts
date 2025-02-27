@@ -25,6 +25,7 @@
 // 📝 3. Highlighting & Selection
 // ========================
 // Delete selectionExample and then half of wordSelection!.
+// Option + →
 // Shift + Option + →
 // Shift + →
 

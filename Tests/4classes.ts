@@ -9,14 +9,14 @@
 // Make it return Hello, {name}
 
 // 🧩  GENERIC FUNCTION:
-// export class Person {
-//   constructor(public name: string, private age: number) {
+// export class Car {
+//   constructor(public model: string, private vin: number) {
 //     // Your code here
 //   }
 
-//   greet(): string {
+//   model(): string {
 //     // Your code here
-//     return "answer";
+//     return "model";
 //   }
 // }
 
