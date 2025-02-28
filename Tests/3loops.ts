@@ -12,15 +12,7 @@
 
 // ========================================================================
 // 📝 YOUR ANSWER:
-function countToFive(): number[] {
-  let count = 0;
-  const five: number[] = [];
-  while (count < 5) {
-    five.push(count);
-    count++;
-  }
-  return five;
-}
+
 // ========================================================================
 
 // 🔄 TEST: countToFive

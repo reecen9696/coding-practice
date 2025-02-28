@@ -19,18 +19,12 @@
 
 // ========================================================================
 // 📝 YOUR ANSWER:
-interface User {
-  name: string;
-  age: number;
-}
-function userSummary(user: User): string {
-  return `${user.name} is ${user.age} years old.`;
-}
+
 // ========================================================================
 
 // 🏷️ TEST: userSummary
 const testUser: User = { name: "Reece", age: 28 };
 console.log(
   "userSummary(testUser):",
-  userSummary(testUser) === "Reece is 28 years old." ? "✅ Pass" : "❌ Fails"
+  userSummary(testUser) === "Reece is 28 years old." ? "✅ Pass" : "❌ Fail"
 );

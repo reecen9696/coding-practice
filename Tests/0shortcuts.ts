@@ -11,11 +11,13 @@
 // Highlight the line below without touching the mouse & then delete the line!
 // Shift + ↓
 
+//DELETE THIS DAMN LINE YO
+
 // ========================
 // 📝 Highlighting & Selection - line
 // ========================
 // Highlight the line below without touching the mouse & then delete the line!
-
+// Shift + command + ↓
 
 //DELETE THIS DAMN LINE YO
 
@@ -27,16 +29,16 @@
 // Shift + Option + →
 // Shift + →
 
-const Selection";
+const selectionExample = "wordSelection";
 
 // ========================
 // 📝 4. Highlighting & Selection
 // ========================
-// Select all occurrences of the word "reece" and rename to "singles" them all at once.
+// Select all occurrences of the word "duplicate" and rename to "singles" them all at once.
 //Cmd + D (click D repeatedly)
-const reece = 1;
-const duplicateValue = reece + 2;
-console.log(reece);
+const duplicate = 1;
+const duplicateValue = duplicate + 2;
+console.log(duplicate);
 
 // ========================
 // 🖊️ 5. Renaming
