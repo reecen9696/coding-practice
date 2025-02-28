@@ -26,5 +26,5 @@
 const testUser: User = { name: "Reece", age: 28 };
 console.log(
   "userSummary(testUser):",
-  userSummary(testUser) === "Reece is 28 years old." ? "✅ Pass" : "❌ Fail"
+  userSummary(testUser) === "Reece is 28 years old." ? "✅ Pass" : "❌ Fails"
 );
