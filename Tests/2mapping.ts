@@ -24,7 +24,10 @@
 
 // ========================================================================
 // 📝 YOUR ANSWER:
-
+function doubleNumbers(numbers: number[]) {
+  const double = numbers.map((num) => num * 2);
+  return double;
+}
 // ========================================================================
 
 // 📦 TEST: doubleNumbers
