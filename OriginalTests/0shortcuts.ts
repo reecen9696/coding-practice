@@ -45,8 +45,8 @@ console.log(duplicate);
 // ========================
 // fn + F2
 // Place your cursor on the variable "renameMe" and rename it to "renameYou".
-const renameMe = "Old Name";
-console.log(renameMe);
+const reece = "Old Name";
+console.log(reece);
 
 // ========================
 // 🧭 6. Line Navigation

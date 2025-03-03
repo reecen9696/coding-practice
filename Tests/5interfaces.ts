@@ -1,6 +1,7 @@
 // ========================
 // 📦 CONCEPT: Interfaces
 // 🏷️ NAME: userSummary
+`A way to define the structure of an object in TypeScript. It prevents errors by enforcing consistent object structures.`;
 // ========================
 
 // 📄 QUESTION:

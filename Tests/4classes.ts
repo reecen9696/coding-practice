@@ -1,6 +1,7 @@
 // ========================
 // 📦 CONCEPT: Classes
 // 🏷️ NAME: Person
+`A blueprint for creating objects with properties and methods.  It enables code reuse, encapsulation, and better organization.`;
 // ========================
 
 // 📄  QUESTION:
