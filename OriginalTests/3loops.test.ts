@@ -16,6 +16,7 @@
 // ========================================================================
 
 // 🔄 TEST: countToFive
+
 describe("countToFive function", () => {
   test("returns an array of numbers from 0 to 4", () => {
     expect(countToFive()).toEqual([0, 1, 2, 3, 4]);

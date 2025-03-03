@@ -21,6 +21,7 @@
 // ========================================================================
 
 // 🏷️ TEST: fetchData
+
 describe("fetchData function", () => {
   test("returns 'Data received' after 2 seconds", async () => {
     jest.useFakeTimers();

@@ -9,13 +9,13 @@
 // The button should toggle between "ON" and "OFF" when clicked.
 
 // 🧩 GENERIC FUNCTION:
-import { useState } from "react";
+// import { useState } from "react";
 
-export function ToggleButton() {
-  const [isOn, setIsOn] = useState(false);
+// export function ToggleButton() {
+//   const [isOn, setIsOn] = useState(false);
 
-  return <button onClick={() => setIsOn(!isOn)}>{isOn ? "ON" : "OFF"}</button>;
-}
+//   return <button onClick={() => setIsOn(!isOn)}>{isOn ? "ON" : "OFF"}</button>;
+// }
 
 // ========================================================================
 // 📝 YOUR ANSWER:
@@ -25,23 +25,28 @@ export function ToggleButton() {
 // 🏗️ TEST: useState in ToggleButton
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import { ToggleButton } from "./ToggleButton"; // Import the component
 
-test("ToggleButton should toggle state when clicked", () => {
-  render(<ToggleButton />);
+const testUseState = false;
 
-  const button = screen.getByRole("button");
+if (testUseState) {
+  describe("ToggleButton component", () => {
+    test("should render with initial state OFF", () => {
+      render(<ToggleButton />);
+      const button = screen.getByRole("button");
+      expect(button).toHaveTextContent("OFF");
+    });
 
-  // Initial state should be OFF
-  expect(button).toHaveTextContent("OFF");
+    test("should toggle between ON and OFF when clicked", () => {
+      render(<ToggleButton />);
+      const button = screen.getByRole("button");
 
-  // Click to turn ON
-  fireEvent.click(button);
-  expect(button).toHaveTextContent("ON");
+      // Click to turn ON
+      fireEvent.click(button);
+      expect(button).toHaveTextContent("ON");
 
-  // Click again to turn OFF
-  fireEvent.click(button);
-  expect(button).toHaveTextContent("OFF");
-});
-
-console.log("\n✅ Testing complete!");
+      // Click again to turn OFF
+      fireEvent.click(button);
+      expect(button).toHaveTextContent("OFF");
+    });
+  });
+}

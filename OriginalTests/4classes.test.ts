@@ -27,6 +27,7 @@
 // ========================================================================
 
 // 🏗️ TEST: Person class
+
 describe("Person class", () => {
   test("creates a person with a name and private age", () => {
     const person = new Person("Reece", 28);
