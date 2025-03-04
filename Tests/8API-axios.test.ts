@@ -33,32 +33,28 @@ import { jest } from "@jest/globals";
 
 jest.mock("axios");
 
-const testApiAxios = false;
-
-if (testApiAxios) {
-  describe("getUser function (Axios)", () => {
-    beforeEach(() => {
-      jest.restoreAllMocks(); // Reset mocks before each test
-    });
-
-    test("fetches user name successfully", async () => {
-      (axios.get as jest.Mock).mockResolvedValue({
-        data: { name: "Leanne Graham" },
-      });
-
-      await expect(getUser()).resolves.toBe("Leanne Graham");
-    });
-
-    test("handles Axios request failure", async () => {
-      (axios.get as jest.Mock).mockRejectedValue(new Error("Network Error"));
-
-      await expect(getUser()).resolves.toBe("Error fetching user");
-    });
-
-    test("handles invalid responses", async () => {
-      (axios.get as jest.Mock).mockResolvedValue({ data: {} });
-
-      await expect(getUser()).resolves.toBe("Error fetching user");
-    });
+describe("getUser function (Axios)", () => {
+  beforeEach(() => {
+    jest.restoreAllMocks(); // Reset mocks before each test
   });
-}
+
+  test("fetches user name successfully", async () => {
+    (axios.get as jest.Mock).mockResolvedValue({
+      data: { name: "Leanne Graham" },
+    });
+
+    await expect(getUser()).resolves.toBe("Leanne Graham");
+  });
+
+  test("handles Axios request failure", async () => {
+    (axios.get as jest.Mock).mockRejectedValue(new Error("Network Error"));
+
+    await expect(getUser()).resolves.toBe("Error fetching user");
+  });
+
+  test("handles invalid responses", async () => {
+    (axios.get as jest.Mock).mockResolvedValue({ data: {} });
+
+    await expect(getUser()).resolves.toBe("Error fetching user");
+  });
+});

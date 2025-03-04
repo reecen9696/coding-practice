@@ -25,23 +25,19 @@
 
 // 🏷️ TEST: userSummary
 
-const testInterfaces = false;
-
-if (testInterfaces) {
-  describe("userSummary function", () => {
-    test("returns correct user summary", () => {
-      const testUser: User = { name: "Reece", age: 28 };
-      expect(userSummary(testUser)).toBe("Reece is 28 years old.");
-    });
-
-    test("works with different names and ages", () => {
-      const testUser: User = { name: "Alice", age: 35 };
-      expect(userSummary(testUser)).toBe("Alice is 35 years old.");
-    });
-
-    test("handles edge cases like age 0", () => {
-      const testUser: User = { name: "Baby", age: 0 };
-      expect(userSummary(testUser)).toBe("Baby is 0 years old.");
-    });
+describe("userSummary function", () => {
+  test("returns correct user summary", () => {
+    const testUser: User = { name: "Reece", age: 28 };
+    expect(userSummary(testUser)).toBe("Reece is 28 years old.");
   });
-}
+
+  test("works with different names and ages", () => {
+    const testUser: User = { name: "Alice", age: 35 };
+    expect(userSummary(testUser)).toBe("Alice is 35 years old.");
+  });
+
+  test("handles edge cases like age 0", () => {
+    const testUser: User = { name: "Baby", age: 0 };
+    expect(userSummary(testUser)).toBe("Baby is 0 years old.");
+  });
+});

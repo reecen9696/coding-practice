@@ -22,22 +22,18 @@
 
 // 🏷️ TEST: fetchData
 
-const testAsync = false;
+describe("fetchData function", () => {
+  test("returns 'Data received' after 2 seconds", async () => {
+    jest.useFakeTimers();
+    const promise = fetchData();
 
-if (testAsync) {
-  describe("fetchData function", () => {
-    test("returns 'Data received' after 2 seconds", async () => {
-      jest.useFakeTimers();
-      const promise = fetchData();
+    jest.advanceTimersByTime(2000);
+    await expect(promise).resolves.toBe("Data received");
 
-      jest.advanceTimersByTime(2000);
-      await expect(promise).resolves.toBe("Data received");
-
-      jest.useRealTimers();
-    });
-
-    test("returns a promise", () => {
-      expect(fetchData()).toBeInstanceOf(Promise);
-    });
+    jest.useRealTimers();
   });
-}
+
+  test("returns a promise", () => {
+    expect(fetchData()).toBeInstanceOf(Promise);
+  });
+});

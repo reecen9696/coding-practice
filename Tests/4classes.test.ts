@@ -28,23 +28,19 @@
 
 // 🏗️ TEST: Person class
 
-const testClasses = false;
-
-if (testClasses) {
-  describe("Person class", () => {
-    test("creates a person with a name and private age", () => {
-      const person = new Person("Reece", 28);
-      expect(person).toBeInstanceOf(Person);
-    });
-
-    test("greet method returns correct greeting", () => {
-      const person = new Person("Reece", 28);
-      expect(person.greet()).toBe("Hello, Reece");
-    });
-
-    test("age property should not be publicly accessible", () => {
-      const person = new Person("Reece", 28);
-      expect((person as any).age).toBeUndefined(); // Should not be directly accessible
-    });
+describe("Person class", () => {
+  test("creates a person with a name and private age", () => {
+    const person = new Person("Reece", 28);
+    expect(person).toBeInstanceOf(Person);
   });
-}
+
+  test("greet method returns correct greeting", () => {
+    const person = new Person("Reece", 28);
+    expect(person.greet()).toBe("Hello, Reece");
+  });
+
+  test("age property should not be publicly accessible", () => {
+    const person = new Person("Reece", 28);
+    expect((person as any).age).toBeUndefined(); // Should not be directly accessible
+  });
+});

@@ -26,27 +26,23 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
-const testUseState = false;
-
-if (testUseState) {
-  describe("ToggleButton component", () => {
-    test("should render with initial state OFF", () => {
-      render(<ToggleButton />);
-      const button = screen.getByRole("button");
-      expect(button).toHaveTextContent("OFF");
-    });
-
-    test("should toggle between ON and OFF when clicked", () => {
-      render(<ToggleButton />);
-      const button = screen.getByRole("button");
-
-      // Click to turn ON
-      fireEvent.click(button);
-      expect(button).toHaveTextContent("ON");
-
-      // Click again to turn OFF
-      fireEvent.click(button);
-      expect(button).toHaveTextContent("OFF");
-    });
+describe("ToggleButton component", () => {
+  test("should render with initial state OFF", () => {
+    render(<ToggleButton />);
+    const button = screen.getByRole("button");
+    expect(button).toHaveTextContent("OFF");
   });
-}
+
+  test("should toggle between ON and OFF when clicked", () => {
+    render(<ToggleButton />);
+    const button = screen.getByRole("button");
+
+    // Click to turn ON
+    fireEvent.click(button);
+    expect(button).toHaveTextContent("ON");
+
+    // Click again to turn OFF
+    fireEvent.click(button);
+    expect(button).toHaveTextContent("OFF");
+  });
+});

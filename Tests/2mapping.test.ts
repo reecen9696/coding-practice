@@ -23,21 +23,17 @@
 // ========================================================================
 
 // 📦 TEST: doubleNumbers
-const testMapping = false;
-
-if (testMapping) {
-  describe("doubleNumbers function", () => {
-    test("doubles each number in an array", () => {
-      expect(doubleNumbers([1, 2, 3])).toEqual([2, 4, 6]);
-      expect(doubleNumbers([5, 10, 15])).toEqual([10, 20, 30]);
-    });
-
-    test("returns an empty array if input is empty", () => {
-      expect(doubleNumbers([])).toEqual([]);
-    });
-
-    test("handles negative numbers correctly", () => {
-      expect(doubleNumbers([-1, -2, -3])).toEqual([-2, -4, -6]);
-    });
+describe("doubleNumbers function", () => {
+  test("doubles each number in an array", () => {
+    expect(doubleNumbers([1, 2, 3])).toEqual([2, 4, 6]);
+    expect(doubleNumbers([5, 10, 15])).toEqual([10, 20, 30]);
   });
-}
+
+  test("returns an empty array if input is empty", () => {
+    expect(doubleNumbers([])).toEqual([]);
+  });
+
+  test("handles negative numbers correctly", () => {
+    expect(doubleNumbers([-1, -2, -3])).toEqual([-2, -4, -6]);
+  });
+});
