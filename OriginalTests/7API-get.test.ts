@@ -10,14 +10,17 @@
 
 // 🧩 GENERIC FUNCTION:
 // async function sampleFunction(): Promise<string> {
-//   try {
-//     const response = await fetch(
-//       "https://sampleURL.com"
-//     );
-//     if (!response.ok) throw new Error("Failed to fetch data");
+// try {
+// const response = await fetch(
+//   "https://sampleurl.com"
+// );
 
-//     const data = await response.json();
-//     return data.name;
+// if (!response.ok) {
+//   throw new Error("Failed to fetch data");
+// }
+
+// const data = await response.json();
+// return data.name;
 //   } catch (error) {
 //     console.error("API Error:", error);
 //     return "Error fetching user";

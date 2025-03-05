@@ -2,65 +2,68 @@
 // 🔎 1. Quick File Navigation
 // ========================
 // Quickly open another file in your project & then come back!
-// Cmd + P 
+// Cmd + P NOT CMD+SHIFT+P!!
 // 👉 Practice: Find SHORTCUTS.md
 
 // ========================
 // 📝 2. Highlighting & Selection
 // ========================
-// Highligh
-
-// ========================
-// 📝 Highlighting & Selection - line
-// ========================
 // Highlight the line below without touching the mouse & then delete the line!
-
+// Shift + ↓
 
 //DELETE THIS DAMN LINE YO
 
 // ========================
-// 📝 3. Highlighting & Selection
+// 📝 Highlight line
+// ========================
+// Highlight the line below without touching the mouse & then delete the line!
+// Shift + command + ↓
+
+//DELETE THIS DAMN LINE YO
+
+// ========================
+// 📝 3. Delete word
 // ========================
 // Delete selectionExample and then half of wordSelection!.
 // Option + →
 // Shift + Option + →
 // Shift + →
 
-const Selection";
+const selectionExample = "wordSelection";
 
 // ========================
-// 📝 4. Highlighting & Selection
+// 📝 4. Delete multiple occurrences
 // ========================
-// Select all occurrences of the word "reece" and rename to "singles" them all at once.
+// Select all occurrences of the word "duplicate" and rename to "singles" them all at once.
 //Cmd + D (click D repeatedly)
-const reece = 1;
-const duplicateValue = reece + 2;
-console.log(reece);
+const duplicate = 1;
+const duplicateValue = duplicate + 2;
+console.log(duplicate);
 
 // ========================
-// 🖊️ 5. Renaming
+// 🖊️ 5. Rename
 // ========================
 // fn + F2
 // Place your cursor on the variable "renameMe" and rename it to "renameYou".
-const andrew = "Old Name";
+const reece = "Old Name";
 console.log(reece);
 
 // ========================
-// 🧭 6. Line Navigation
+// 🧭 6. Line start & End
 // ========================
 // Cmd + ←
 // Cmd + →
 // Jump to the start of this line and to jump to the end.
 
 // ========================
-// 🧭 7. Line Navigation
+// 🧭 7. Top & Bottom of page
 // ========================
 // Cmd + ↑
 // Cmd + ↓
 // Move to the top of the file and then back to the bottom
 
 // ========================
-// 🖊️  8. Word Navigation
+// 🖊️  8. Next and previous word
 // ========================
 //Option + →
 //Option + ←
@@ -84,26 +87,28 @@ console.log("Move this line up or down with the shortcut");
 console.log("Move this line up or down with the shortcut");
 
 // ========================
-// 🗑️ 11. Deletion
+// 🗑️ 11. Delete Word
+// ========================
+// Option + Backspace
 // Delete the word 'removeMe' in the line below.
-const  = "This should be deleted";
+const removeMe = "This should be deleted";
 
 // ========================
-// 🗑️ 12. Deletion
+// 🗑️ 12. Delete Line
 // ========================
- + Backspace
+// Cmd + Backspace
 // Delete this entire line.
 console.log("Delete this line using Cmd + Backspace");
 
 // ========================
-// 🗑️ 13. Deletion
+// 🗑️ 13. Delete forward
 // ========================
-// Fn te
+// Fn + Delete
 // Delete forward in the middle of this text.
 const forwardDelete = "Remove part of this text forward";
 
 // ========================
-// 📁 14. File Navigation & Management
+// 📁 14. File Navigation
 // ========================
 // Cmd + Shift + E / Folder navigation
 // Cmd + Shift + E / Return from Folder navigation
@@ -119,14 +124,14 @@ const forwardDelete = "Remove part of this text forward";
 // 5️⃣ Return to {0shortcut.ts} using quick file navigation and open it.
 
 // ========================
-// 📁 15. Next Tab Previous tab
+// 📁 15. Next & Previous tab
 // ========================
 // Control + Tab
 // Control + shift + Tab
 // Move forward one tab & back one tab
 
 // ========================
-// 📁 16. Terminal
+// 📁 16. Open & Close Terminal
 // ========================
 // Control + ``
 // Control + 1
