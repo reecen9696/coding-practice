@@ -108,7 +108,13 @@ console.log("Delete this line using Cmd + Backspace");
 const forwardDelete = "Remove part of this text forward";
 
 // ========================
-// 📁 14. File Navigation
+// 🗑️ 14.Open & Close the Explorer bar
+// ========================
+// Cmd + B
+// Open and close the Explorer Bar!
+
+// ========================
+// 📁 14.B File Navigation
 // ========================
 // Cmd + Shift + E / Folder navigation
 // Cmd + Shift + E / Return from Folder navigation
