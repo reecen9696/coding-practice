@@ -9,10 +9,7 @@
 
 // ========================================================================
 // 📝 YOUR ANSWER:
-function doubleNumbers(numbers: number[]): number[] {
-  const doubled: number[] = numbers.map((num) => num * 2);
-  return doubled;
-}
+
 // ========================================================================
 
 // 📦 TEST: doubleNumbers

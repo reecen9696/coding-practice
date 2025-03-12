@@ -30,25 +30,6 @@
 // ========================================================================
 // 📝 YOUR ANSWER:
 
-async function getUser(): Promise<string> {
-  try {
-    const response = await fetch(
-      "https://jsonplaceholder.typicode.com/users/1"
-    );
-
-    if (!response.ok) {
-      throw new Error("failed to fetch data");
-    }
-
-    const data = await response.json();
-
-    return data.name;
-  } catch (error) {
-    console.error("API Error:", error);
-    return "Error fetching user";
-  }
-}
-
 // ========================================================================
 
 // 🏗️ TEST: getUser function
