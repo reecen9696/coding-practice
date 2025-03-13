@@ -17,7 +17,7 @@
 // 📝 Highlight line
 // ========================
 // Highlight the line below without touching the mouse & then delete the line!
-// Shift + command + ↓
+// Shift + command + →
 
 //DELETE THIS DAMN LINE YO
 
