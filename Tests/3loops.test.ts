@@ -13,11 +13,11 @@
 
 // ========================
 // 🔄  CONCEPT: Nested loop Loops
-// 🏷️  NAME: generateMultiplicationTable
+// 🏷️  NAME: generateTable
 // ========================
 
 // 📄 QUESTION:
-// Create a function named "generateMultiplicationTable" that takes a number "n"
+// Create a function named "generateTable" that takes a number "n"
 // and returns a 2D array representing the multiplication table up to "n".
 // Each sub-array should contain the multiples of the current row number.
 // For example, if n = 3, the output should be:
@@ -27,7 +27,7 @@
 //   [3, 6, 9]
 // ]
 
-// function generateMultiplicationTable(n: number): number[][] {
+// function generateTable(n: number): number[][] {
 //   const table: number[][] = [];
 //   let i = 1;
 
@@ -76,9 +76,9 @@ describe("countToFive function", () => {
 
 // 🔄 TEST: generateMultiplicationTable
 
-describe("generateMultiplicationTable function", () => {
+describe("generateTable function", () => {
   test("generates a multiplication table for n = 3", () => {
-    expect(generateMultiplicationTable(3)).toEqual([
+    expect(generateTable(3)).toEqual([
       [1, 2, 3],
       [2, 4, 6],
       [3, 6, 9],
@@ -86,26 +86,26 @@ describe("generateMultiplicationTable function", () => {
   });
 
   test("generates a multiplication table for n = 1", () => {
-    expect(generateMultiplicationTable(1)).toEqual([[1]]);
+    expect(generateTable(1)).toEqual([[1]]);
   });
 
   test("generates a multiplication table for n = 0 (empty table)", () => {
-    expect(generateMultiplicationTable(0)).toEqual([]);
+    expect(generateTable(0)).toEqual([]);
   });
 
   test("each row should contain exactly 'n' elements", () => {
-    const result = generateMultiplicationTable(4);
+    const result = generateTable(4);
     result.forEach((row) => {
       expect(row.length).toBe(4);
     });
   });
 
   test("checks if the first element in the first row is 1", () => {
-    expect(generateMultiplicationTable(5)[0][0]).toBe(1);
+    expect(generateTable(5)[0][0]).toBe(1);
   });
 
   test("checks if the last element in the last row is n * n", () => {
     const n = 5;
-    expect(generateMultiplicationTable(n)[n - 1][n - 1]).toBe(n * n);
+    expect(generateTable(n)[n - 1][n - 1]).toBe(n * n);
   });
 });
