@@ -9,7 +9,9 @@
 
 // ========================================================================
 // 📝 YOUR ANSWER:
-
+function doubleNumbers(numbers: number[]): number[] {
+  return numbers.map((num) => num * 2);
+}
 // ========================
 // 📦 CONCEPT: Mapping from JSON
 // 🏷️ NAME: extractNames
@@ -31,6 +33,16 @@
 
 // ========================================================================
 // 📝 YOUR ANSWER:
+
+interface User {
+  id: number;
+  name: string;
+  age: number;
+}
+
+function extractNames(users: User[]): string[] {
+  return users.map((user) => user.name);
+}
 
 // ========================================================================
 
