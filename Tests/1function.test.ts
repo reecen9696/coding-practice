@@ -9,9 +9,7 @@
 
 // ========================================================================
 // 📝 YOUR ANSWER:
-function greet(name: string): string {
-  return `Hello, ${name}`;
-}
+
 // ========================================================================
 
 // ========================
@@ -29,9 +27,6 @@ function greet(name: string): string {
 // ========================================================================
 // 📝 YOUR ANSWER:
 
-function greetWithTime(name: string, timeOfDay: string = "morning"): string {
-  return `Good ${timeOfDay}, ${name}`;
-}
 // ========================================================================
 
 // 🏗️ JEST TEST CASES 1

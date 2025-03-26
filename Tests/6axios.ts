@@ -3,20 +3,6 @@
 
 //G.T.C.F.
 `💡 Get, Then, Catch, Finally`;
-
-// 🚂 “Grandma Takes Cookies Forever” (G.T.C.F.)
-
-// Grandma (G) always Takes (T) fresh cookies from the bakery.
-// But sometimes, she Catches (C) the wrong order.
-// No matter what, she Finally (F) enjoys her snack.
-
-// ⸻
-
-// How It Relates to Axios:
-// 	•	Get → Grandma gets cookies from the bakery (axios.get() sends the request).
-// 	•	Then → If the order is correct, she takes them home (.then(response) handles success).
-// 	•	Catch → If there’s a mistake, she catches the wrong order and complains (.catch(error) handles failure).
-// 	•	Finally → No matter what, she finally gets to enjoy a snack (.finally() runs cleanup).
 // ========================
 
 axios
@@ -46,10 +32,4 @@ axios
 // ========================================================================
 // 📝 YOUR ANSWER:
 
-//GTCF
-
-axios.get<DataItem[]>("https://jsonplaceholder.typicode.com/posts")
-.then((response)=> {setData(response.data)})
-.catch((error)=>}{console.log(`error:`,error;)})
-.finally(()=>{setLoading(false)})
 // ========================================================================
