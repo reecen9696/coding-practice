@@ -11,6 +11,14 @@
 // ========================================================================
 // 📝 YOUR ANSWER:
 
+interface User {
+  name: string;
+  age: number;
+}
+
+function userSummary(user: User): string {
+  return `${user.name} is ${user.age}`;
+}
 // ========================================================================
 
 // 🏷️ TEST: userSummary
