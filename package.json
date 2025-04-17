@@ -5,7 +5,9 @@
   "scripts": {
     "test": "jest --config jest.config.ts",
     "reset": "rm -rf ./Tests/* && cp -R ./OriginalTests/* ./Tests/",
-    "push": "git add . && git commit -m 'quick push' && git push"
+    "push": "git add . && git commit -m 'quick push' && git push",
+    "generate": "ts-node generate-questions.ts"
+
   },
   "keywords": [],
   "author": "",

@@ -1,152 +1,152 @@
 // ========================
 // 🔄  CONCEPT: Array.map()
-// 🏷️  NAME: doubleNumbers
+// 🏷️  NAME: doubleAllElements
 // ========================
 
-// 📄 QUESTION:
-// Create a function called "doubleNumbers" that takes an array of numbers
-// and returns a new array with each number doubled.
+// 📄 INQUIRY:
+// Create a function known as "doubleAllElements" that accepts an array of numbers
+// and yields a new array with every number multiplied by two.
 
 // ========================================================================
-// 📝 YOUR ANSWER:
+// 📝 YOUR SOLUTION:
 
-function doubleNumbers(numbers: number[]): number[] {
+function doubleAllElements(numerals: number[]): number[] {
     // ✍️ Write your answer here
     return [];
-  }
-  // ========================================================================
+}
+// ========================================================================
   
   
-  // ========================
-  // 🔍  CONCEPT: Array.find()
-  // 🏷️  NAME: findUserByName
-  // ========================
-  
-  // 📄 QUESTION:
-  // Create a function called "findUserByName" that takes an array of user objects
-  // and a name, and returns the user object with that name.
-  
-  // ========================================================================
-  // 📝 YOUR ANSWER:
-  
-  function findUserByName(users: { name: string, age: number }[], targetName: string) {
+// ========================
+// 🔍  CONCEPT: Array.find()
+// 🏷️  NAME: locateUserViaName
+// ========================
+
+// 📄 INQUIRY:
+// Design a function named "locateUserViaName" that accepts an array of user objects
+// and a name, then returns the user object that matches the given name.
+
+// ========================================================================
+// 📝 YOUR SOLUTION:
+
+function locateUserViaName(users: { name: string, age: number }[], targetName: string) {
     // ✍️ Write your answer here
     return null;
-  }
-  // ========================================================================
+}
+// ========================================================================
   
   
-  // ========================
-  // ✂️  CONCEPT: Array.filter()
-  // 🏷️  NAME: filterAdults
-  // ========================
-  
-  // 📄 QUESTION:
-  // Create a function called "filterAdults" that takes an array of user objects
-  // and returns only those who are 18 or older.
-  
-  // ========================================================================
-  // 📝 YOUR ANSWER:
-  
-  function filterAdults(users: { name: string, age: number }[]): { name: string, age: number }[] {
+// ========================
+// ✂️  CONCEPT: Array.filter()
+// 🏷️  NAME: filterMatureUsers
+// ========================
+
+// 📄 INQUIRY:
+// Design a function named "filterMatureUsers" that takes an array of user objects
+// and returns those who are 18 years old or above.
+
+// ========================================================================
+// 📝 YOUR SOLUTION:
+
+function filterMatureUsers(users: { name: string, age: number }[]): { name: string, age: number }[] {
     // ✍️ Write your answer here
     return [];
-  }
-  // ========================================================================
+}
+// ========================================================================
   
   
-  // ========================
-  // 🔧  CONCEPT: Object manipulation
-  // 🏷️  NAME: updateUserAge
-  // ========================
-  
-  // 📄 QUESTION:
-  // Create a function called "updateUserAge" that takes a user object and a new age,
-  // and returns a copy of the user object with the updated age.
-  
-  // ========================================================================
-  // 📝 YOUR ANSWER:
-  
-  function updateUserAge(user: { name: string, age: number }, newAge: number) {
+// ========================
+// 🔧  CONCEPT: Object manipulation
+// 🏷️  NAME: modifyUserAge
+// ========================
+
+// 📄 INQUIRY:
+// Design a function known as "modifyUserAge" that takes a user object and a new age,
+// then returns a duplicate of the user object with the changed age.
+
+// ========================================================================
+// 📝 YOUR SOLUTION:
+
+function modifyUserAge(user: { name: string, age: number }, updatedAge: number) {
     // ✍️ Write your answer here
     return {};
-  }
-  // ========================================================================
+}
+// ========================================================================
   
   
-  // ========================================================================
-  // 🔄 TESTS
-  // ========================================================================
-  
-  describe("doubleNumbers function", () => {
-    test("doubles all numbers in array", () => {
-      expect(doubleNumbers([1, 2, 3])).toEqual([2, 4, 6]);
+// ========================================================================
+// 🔄 TESTS
+// ========================================================================
+
+describe("doubleAllElements function", () => {
+    test("doubles all numbers in the array", () => {
+        expect(doubleAllElements([1, 2, 3])).toEqual([2, 4, 6]);
     });
-  
+
     test("returns an empty array if input is empty", () => {
-      expect(doubleNumbers([])).toEqual([]);
+        expect(doubleAllElements([])).toEqual([]);
     });
-  });
-  
-  describe("findUserByName function", () => {
+});
+
+describe("locateUserViaName function", () => {
     const users = [
-      { name: "Alice", age: 25 },
-      { name: "Bob", age: 30 }
+        { name: "Alice", age: 25 },
+        { name: "Bob", age: 30 }
     ];
-  
-    test("finds the correct user by name", () => {
-      expect(findUserByName(users, "Bob")).toEqual({ name: "Bob", age: 30 });
+
+    test("finds and returns the correct user by name", () => {
+        expect(locateUserViaName(users, "Bob")).toEqual({ name: "Bob", age: 30 });
     });
-  
+
     test("returns null if no match is found", () => {
-      expect(findUserByName(users, "Charlie")).toBe(null);
+        expect(locateUserViaName(users, "Charlie")).toBe(null);
     });
-  });
-  
-  describe("filterAdults function", () => {
+});
+
+describe("filterMatureUsers function", () => {
     const users = [
-      { name: "Tom", age: 17 },
-      { name: "Jane", age: 22 }
+        { name: "Harry", age: 17 },
+        { name: "Maggie", age: 22 }
     ];
-  
+
     test("returns only users 18 or older", () => {
-      expect(filterAdults(users)).toEqual([{ name: "Jane", age: 22 }]);
+        expect(filterMatureUsers(users)).toEqual([{ name: "Maggie", age: 22 }]);
     });
-  });
-  
-  describe("updateUserAge function", () => {
+});
+
+describe("modifyUserAge function", () => {
     const user = { name: "Sam", age: 20 };
-  
+
     test("returns a new object with updated age", () => {
-      expect(updateUserAge(user, 25)).toEqual({ name: "Sam", age: 25 });
+        expect(modifyUserAge(user, 25)).toEqual({ name: "Sam", age: 25 });
     });
-  
-    test("does not mutate original object", () => {
-      const copy = { ...user };
-      updateUserAge(user, 99);
-      expect(user).toEqual(copy);
+
+    test("does not mutate the original object", () => {
+        const clone = { ...user };
+        modifyUserAge(user, 99);
+        expect(user).toEqual(clone);
     });
-  });
+});
   
+// ========================================================================
+// 🧠 ANSWERS (Hidden Below)
+// ========================================================================
   
-  // ========================================================================
-  // 🧠 ANSWERS (Hidden Below)
-  // ========================================================================
+/*
+function doubleAllElements(numerals: number[]): number[] {
+    return numerals.map(n => n * 2);
+}
   
-  /*
-  function doubleNumbers(numbers: number[]): number[] {
-    return numbers.map(n => n * 2);
-  }
-  
-  function findUserByName(users: { name: string, age: number }[], targetName: string) {
+function locateUserViaName(users: { name: string, age: number }[], targetName: string) {
     return users.find(u => u.name === targetName) || null;
-  }
+}
   
-  function filterAdults(users: { name: string, age: number }[]): { name: string, age: number }[] {
+function filterMatureUsers(users: { name: string, age: number }[]): { name: string, age: number }[] {
     return users.filter(u => u.age >= 18);
-  }
+}
   
-  function updateUserAge(user: { name: string, age: number }, newAge: number) {
-    return { ...user, age: newAge };
-  }
-  */
+function modifyUserAge(user: { name: string, age: number }, updatedAge: number) {
+    return { ...user, age: updatedAge };
+}
+*/
+

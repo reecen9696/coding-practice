@@ -1,76 +1,105 @@
 // ========================
-// 📦 CONCEPT: Mapping Arrays
-// 🏷️ NAME: doubleNumbers
+// 📦 CONCEPT: Transforming Arrays
+// 🏷️ NAME: amplifyValues
 // ========================
 
-// 📄 QUESTION:
-// Create a function named "doubleNumbers" that takes an array of numbers
-// and returns a new array with all elements doubled.
+// 📄 TASK:
+// Formulate a function named "amplifyValues" that accepts an array of numbers
+// and fabricates a new array with all constituents multiplied by two.
 
 // ========================================================================
-// 📝 YOUR ANSWER:
+// 📝 YOUR SOLUTION:
 
-// ========================
-// 📦 CONCEPT: Mapping from JSON
-// 🏷️ NAME: extractNames
+// ========================================================================
+// 📦 CONCEPT: Converting from JSON
+// 🏷️ NAME: retrieveNames
 // ========================
 
-// 📄 QUESTION:
-// Given the following JSON array of users, create a function named "extractNames"
-// that returns an array of user names.
-// hint - you need an interface & a map  object.map(item => item.value)
+// 📄 TASK:
+// Considering the subsequent JSON array of clients, formulate a function named "retrieveNames"
+// that delivers an array of client names.
+// Hint - you may need an interface & a map  object.map(item => item.designation)
 
 // Example JSON:
-// const users = [
+// const clients = [
 //   { id: 1, name: "Alice", age: 25 },
 //   { id: 2, name: "Bob", age: 30 },
 //   { id: 3, name: "Charlie", age: 35 }
 // ];
 
-// Expected Output: ["Alice", "Bob", "Charlie"]
+// Desired Output: ["Alice", "Bob", "Charlie"]
 
 // ========================================================================
-// 📝 YOUR ANSWER:
+// 📝 YOUR SOLUTION:
 
+interface Clients{
+  id: number,
+  name: string,
+  age: number
+}
+
+function retreiveNames(clients:Clients[]):string[]{
+  return clients.map(client=>client.name);
+}
 // ========================================================================
 
-// 📦 TEST: extractNames
-describe("extractNames function", () => {
-  const sampleUsers = [
+// 📦 TEST: retrieveNames
+describe("retrieveNames function", () => {
+  const exemplarClients = [
     { id: 1, name: "Alice", age: 25 },
     { id: 2, name: "Bob", age: 30 },
     { id: 3, name: "Charlie", age: 35 },
   ];
 
-  test("extracts names from a list of user objects", () => {
-    expect(extractNames(sampleUsers)).toEqual(["Alice", "Bob", "Charlie"]);
+  test("extracts names from a catalog of client objects", () => {
+    expect(retrieveNames(exemplarClients)).toEqual(["Alice", "Bob", "Charlie"]);
   });
 
-  test("returns an empty array if no users are provided", () => {
-    expect(extractNames([])).toEqual([]);
+  test("delivers an empty array if no clients are provided", () => {
+    expect(retrieveNames([])).toEqual([]);
   });
 
-  test("handles users with empty name fields", () => {
-    const usersWithEmptyName = [
+  test("handles clients with vacant name fields", () => {
+    const clientsWithVacantName = [
       { id: 1, name: "", age: 25 },
       { id: 2, name: "Eve", age: 30 },
     ];
-    expect(extractNames(usersWithEmptyName)).toEqual(["", "Eve"]);
+    expect(retrieveNames(clientsWithVacantName)).toEqual(["", "Eve"]);
   });
 });
 
-// 📦 TEST: doubleNumbers
-describe("doubleNumbers function", () => {
-  test("doubles each number in an array", () => {
-    expect(doubleNumbers([1, 2, 3])).toEqual([2, 4, 6]);
-    expect(doubleNumbers([5, 10, 15])).toEqual([10, 20, 30]);
+// 📦 TEST: amplifyValues
+describe("amplifyValues function", () => {
+  test("multiplies each numeric value within an array by two", () => {
+    expect(amplifyValues([1, 2, 3])).toEqual([2, 4, 6]);
+    expect(amplifyValues([5, 10, 15])).toEqual([10, 20, 30]);
   });
 
-  test("returns an empty array if input is empty", () => {
-    expect(doubleNumbers([])).toEqual([]);
+  test("renders an empty array if input is absent", () => {
+    expect(amplifyValues([])).toEqual([]);
   });
 
-  test("handles negative numbers correctly", () => {
-    expect(doubleNumbers([-1, -2, -3])).toEqual([-2, -4, -6]);
+  test("manipulates negative numbers correctly", () => {
+    expect(amplifyValues([-1, -2, -3])).toEqual([-2, -4, -6]);
   });
 });
+
+// ========================================================================
+// 🧠 SOLUTIONS (Hidden Below)
+// ========================================================================
+
+/*
+function amplifyValues(numbers: number[]): number[] {
+  return numbers.map(n => n * 2);
+}
+
+interface Client {
+  id: number;
+  name: string;
+  age: number;
+}
+
+function retrieveNames(clients: Client[]): string[] {
+  return clients.map(client => client.name);
+}
+*/

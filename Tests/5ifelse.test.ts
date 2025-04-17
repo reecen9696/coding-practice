@@ -1,10 +1,10 @@
 // ========================
 // 🔁  CONCEPT: If/Else
-// 🏷️  NAME: isPositive
+// 🏷️  NAME: checkSign
 // ========================
 
 // 📄 QUESTION:
-// Create a function called "isPositive" that takes a number and returns:
+// Define a function named "checkSign" that accepts a number and returns:
 // - "positive" if the number is greater than 0
 // - "zero" if the number is exactly 0
 // - "negative" if the number is less than 0
@@ -12,7 +12,7 @@
 // ========================================================================
 // 📝 YOUR ANSWER:
 
-function isPositive(n: number): string {
+function checkSign(value: number): string {
     // ✍️ Write your answer here
     return "";
   }
@@ -21,17 +21,17 @@ function isPositive(n: number): string {
   
   // ========================
   // ❓  CONCEPT: Ternary
-  // 🏷️  NAME: isEven
+  // 🏷️  NAME: isMultipleOfTwo
   // ========================
   
   // 📄 QUESTION:
-  // Create a function named "isEven" that returns "even" if the number is divisible by 2,
+  // Craft a function named "isMultipleOfTwo" that returns "even" if the number is divisible by 2,
   // otherwise return "odd".
   
   // ========================================================================
   // 📝 YOUR ANSWER:
   
-  function isEven(n: number): string {
+  function isMultipleOfTwo(value: number): string {
     // ✍️ Write your answer here
     return "";
   }
@@ -40,17 +40,17 @@ function isPositive(n: number): string {
   
   // ========================
   // 🔀  CONCEPT: Switch
-  // 🏷️  NAME: getDayName
+  // 🏷️  NAME: returnDayName
   // ========================
   
   // 📄 QUESTION:
-  // Create a function called "getDayName" that takes a number (0–6)
-  // and returns the name of the day (e.g. 0 = Sunday, 1 = Monday, etc).
+  // Construct a function named "returnDayName" that accepts a number (0–6)
+  // and returns the corresponding day of the week (e.g. 0 = Sunday, 1 = Monday, etc).
   
   // ========================================================================
   // 📝 YOUR ANSWER:
   
-  function getDayName(day: number): string {
+  function returnDayName(dayIndex: number): string {
     // ✍️ Write your answer here
     return "";
   }
@@ -61,42 +61,42 @@ function isPositive(n: number): string {
   // 🔄 TESTS
   // ========================================================================
   
-  describe("isPositive function", () => {
+  describe("checkSign function", () => {
     test("returns 'positive' if number is greater than 0", () => {
-      expect(isPositive(5)).toBe("positive");
+      expect(checkSign(5)).toBe("positive");
     });
   
     test("returns 'negative' if number is less than 0", () => {
-      expect(isPositive(-1)).toBe("negative");
+      expect(checkSign(-1)).toBe("negative");
     });
   
     test("returns 'zero' if number is 0", () => {
-      expect(isPositive(0)).toBe("zero");
+      expect(checkSign(0)).toBe("zero");
     });
   });
   
-  describe("isEven function", () => {
+  describe("isMultipleOfTwo function", () => {
     test("returns 'even' when number is divisible by 2", () => {
-      expect(isEven(4)).toBe("even");
+      expect(isMultipleOfTwo(4)).toBe("even");
     });
   
     test("returns 'odd' when number is not divisible by 2", () => {
-      expect(isEven(7)).toBe("odd");
+      expect(isMultipleOfTwo(7)).toBe("odd");
     });
   });
   
-  describe("getDayName function", () => {
+  describe("returnDayName function", () => {
     test("returns 'Sunday' for 0", () => {
-      expect(getDayName(0)).toBe("Sunday");
+      expect(returnDayName(0)).toBe("Sunday");
     });
   
     test("returns 'Wednesday' for 3", () => {
-      expect(getDayName(3)).toBe("Wednesday");
+      expect(returnDayName(3)).toBe("Wednesday");
     });
   
     test("returns 'Invalid' for values outside 0–6", () => {
-      expect(getDayName(7)).toBe("Invalid");
-      expect(getDayName(-1)).toBe("Invalid");
+      expect(returnDayName(7)).toBe("Invalid");
+      expect(returnDayName(-1)).toBe("Invalid");
     });
   });
   
@@ -106,18 +106,18 @@ function isPositive(n: number): string {
   // ========================================================================
   
   /*
-  function isPositive(n: number): string {
-    if (n > 0) return "positive";
-    else if (n === 0) return "zero";
+  function checkSign(value: number): string {
+    if (value > 0) return "positive";
+    else if (value === 0) return "zero";
     else return "negative";
   }
   
-  function isEven(n: number): string {
-    return n % 2 === 0 ? "even" : "odd";
+  function isMultipleOfTwo(value: number): string {
+    return value % 2 === 0 ? "even" : "odd";
   }
   
-  function getDayName(day: number): string {
-    switch (day) {
+  function returnDayName(dayIndex: number): string {
+    switch (dayIndex) {
       case 0: return "Sunday";
       case 1: return "Monday";
       case 2: return "Tuesday";

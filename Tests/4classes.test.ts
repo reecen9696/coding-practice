@@ -1,36 +1,36 @@
 // ========================
 // 📦 CONCEPT: Classes
-// 🏷️ NAME: Person
-`A blueprint for creating objects with properties and methods.`;
-`It enables code reuse, encapsulation, and better organization.`;
+// 🏷️ NAME: Individual
+`A template for constructing objects with specific properties and functionalities.`;
+`It promotes code recycling, data hiding, and improved code structuring.`;
 // ========================
 
-// 📄 QUESTION:
-// Create a class named "Person" with properties "name" (public string) and "age" (private number).
-// The constructor should initialize these properties. Add a method named "greet" that returns a greeting string.
-// Make it return "Hello, {name}"
+// 📄 INSTRUCTION:
+// Develop a class called "Individual" with properties "fullname" (public string) and "years" (private number).
+// These properties should be initialized in the constructor. Include a method named "sayHi" that yields a greeting string.
+// It should return "Hello, {fullname}"
 
 // ========================================================================
-// 📝 YOUR ANSWER:
+// 📝 YOUR SOLUTION:
 
 // ========================================================================
 
-// 🏗️ TEST: Person class
+// 🏗️ TEST: Individual class
 
-describe("Person class", () => {
-  test("creates a person with a name and private age", () => {
-    const person = new Person("Reece", 28);
-    expect(person).toBeInstanceOf(Person);
+describe("Individual class", () => {
+  test("constructs an individual with a fullname and private years", () => {
+    const individual = new Individual("Mason", 28);
+    expect(individual).toBeInstanceOf(Individual);
   });
 
-  test("greet method returns correct greeting", () => {
-    const person = new Person("Reece", 28);
-    expect(person.greet()).toBe("Hello, Reece");
+  test("sayHi method yields the correct greeting", () => {
+    const individual = new Individual("Mason", 28);
+    expect(individual.sayHi()).toBe("Hello, Mason");
   });
 
-  test("age property should not be publicly accessible", () => {
-    const person = new Person("Reece", 28);
-    expect((person as any).age).toBeUndefined(); // Should not be directly accessible
+  test("years property should not be publicly accessible", () => {
+    const individual = new Individual("Mason", 28);
+    expect((individual as any).years).toBeUndefined(); // Should not be directly accessible
   });
 });
 
@@ -54,15 +54,14 @@ describe("Person class", () => {
 // ========================================================================
 // ========================================================================
 // ========================================================================
-// ========================================================================
-// 🧩 GENERIC FUNCTION:
-// export class Car {
-//   constructor(public model: string, private vin: number) {
+// 🧩 STANDARD FUNCTION:
+// export class Automobile {
+//   constructor(public type: string, private id: number) {
 //     // Your code here
 //   }
 
-//   model(): string {
+//   type(): string {
 //     // Your code here
-//     return "model";
+//     return "type";
 //   }
 // }

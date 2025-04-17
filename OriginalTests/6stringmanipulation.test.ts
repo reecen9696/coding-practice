@@ -1,171 +1,113 @@
-// ========================
-// 🔤  CONCEPT: toLowerCase
-// 🏷️  NAME: makeLowercase
-// ========================
+// CONCEPT: toLowerCase
+// NAME: convertToLowercase
 
-// 📄 QUESTION:
-// Create a function called "makeLowercase" that takes a string and returns it all in lowercase.
-
-// ========================================================================
-// 📝 YOUR ANSWER:
-
-function makeLowercase(str: string): string {
-    // ✍️ Write your answer here
+function convertToLowercase(input: string): string {
     return "";
-  }
-  // ========================================================================
-  
-  
-  // ========================
-  // 🔠  CONCEPT: split
-  // 🏷️  NAME: splitByDash
-  // ========================
-  
-  // 📄 QUESTION:
-  // Create a function named "splitByDash" that takes a string like "a-b-c"
-  // and returns an array: ["a", "b", "c"]
-  
-  // ========================================================================
-  // 📝 YOUR ANSWER:
-  
-  function splitByDash(str: string): string[] {
-    // ✍️ Write your answer here
+}
+
+// CONCEPT: split
+// NAME: divideByHyphen
+
+function divideByHyphen(input: string): string[] {
     return [];
-  }
-  // ========================================================================
-  
-  
-  // ========================
-  // 🔁  CONCEPT: replace (spaces)
-  // 🏷️  NAME: removeSpaces
-  // ========================
-  
-  // 📄 QUESTION:
-  // Create a function called "removeSpaces" that removes all spaces from a string.
-  
-  // ========================================================================
-  // 📝 YOUR ANSWER:
-  
-  function removeSpaces(str: string): string {
-    // ✍️ Write your answer here
+}
+
+// CONCEPT: replace (spaces)
+// NAME: eraseSpaces
+
+function eraseSpaces(input: string): string {
     return "";
-  }
-  // ========================================================================
-  
-  
-  // ========================
-  // ✂️  CONCEPT: trim
-  // 🏷️  NAME: trimEdges
-  // ========================
-  
-  // 📄 QUESTION:
-  // Create a function called "trimEdges" that removes leading and trailing whitespace from a string.
-  
-  // ========================================================================
-  // 📝 YOUR ANSWER:
-  
-  function trimEdges(str: string): string {
-    // ✍️ Write your answer here
+}
+
+// CONCEPT: trim
+// NAME: clipWhitespace
+
+function clipWhitespace(input: string): string {
     return "";
-  }
-  // ========================================================================
-  
-  
-  // ========================
-  // 🧼  CONCEPT: replace (unwanted chars)
-  // 🏷️  NAME: cleanSymbols
-  // ========================
-  
-  // 📄 QUESTION:
-  // Create a function called "cleanSymbols" that removes all slashes (/), quotes (" or '), and semicolons (;)
-  
-  // ========================================================================
-  // 📝 YOUR ANSWER:
-  
-  function cleanSymbols(str: string): string {
-    // ✍️ Write your answer here
+}
+
+// CONCEPT: replace (unwanted chars)
+// NAME: sanitizeText
+
+function sanitizeText(input: string): string {
     return "";
-  }
-  // ========================================================================
-  
-  
-  // ========================================================================
-  // 🔄 TESTS
-  // ========================================================================
-  
-  describe("makeLowercase function", () => {
-    test("converts uppercase to lowercase", () => {
-      expect(makeLowercase("HELLO")).toBe("hello");
+}
+
+
+// TESTS
+
+describe("convertToLowercase function", () => {
+    test("changes uppercase to lowercase", () => {
+        expect(convertToLowercase("HELLO")).toBe("hello");
     });
-  
-    test("handles mixed case strings", () => {
-      expect(makeLowercase("HeLLo WoRLD")).toBe("hello world");
+
+    test("handles strings with a mix of cases", () => {
+        expect(convertToLowercase("HeLLo WoRLD")).toBe("hello world");
     });
-  });
-  
-  describe("splitByDash function", () => {
-    test("splits a string by dash", () => {
-      expect(splitByDash("a-b-c")).toEqual(["a", "b", "c"]);
+});
+
+describe("divideByHyphen function", () => {
+    test("divides a string at the hyphen", () => {
+        expect(divideByHyphen("a-b-c")).toEqual(["a", "b", "c"]);
     });
-  
-    test("returns a single-item array when no dashes", () => {
-      expect(splitByDash("abc")).toEqual(["abc"]);
+
+    test("returns an array with one item when there are no hyphens", () => {
+        expect(divideByHyphen("abc")).toEqual(["abc"]);
     });
-  });
-  
-  describe("removeSpaces function", () => {
-    test("removes all spaces", () => {
-      expect(removeSpaces("a b c")).toBe("abc");
+});
+
+describe("eraseSpaces function", () => {
+    test("takes out all spaces", () => {
+        expect(eraseSpaces("a b c")).toBe("abc");
     });
-  
-    test("removes leading, trailing, and inner spaces", () => {
-      expect(removeSpaces("  hello world  ")).toBe("helloworld");
+
+    test("takes out spaces at the start, end, and inside", () => {
+        expect(eraseSpaces("  hello world  ")).toBe("helloworld");
     });
-  });
-  
-  describe("trimEdges function", () => {
-    test("removes only the outer whitespace", () => {
-      expect(trimEdges("  hello world  ")).toBe("hello world");
+});
+
+describe("clipWhitespace function", () => {
+    test("takes out only the outer whitespace", () => {
+        expect(clipWhitespace("  hello world  ")).toBe("hello world");
     });
-  
-    test("returns unchanged string if no outer whitespace", () => {
-      expect(trimEdges("hi")).toBe("hi");
+
+    test("returns the same string if there is no outer whitespace", () => {
+        expect(clipWhitespace("hi")).toBe("hi");
     });
-  });
-  
-  describe("cleanSymbols function", () => {
+});
+
+describe("sanitizeText function", () => {
     test("removes slashes, quotes, and semicolons", () => {
-      expect(cleanSymbols(`"he/ll'o;`)).toBe("hello");
+        expect(sanitizeText(`"he/ll'o;`)).toBe("hello");
     });
-  
-    test("cleans complex mix of unwanted characters", () => {
-      expect(cleanSymbols(` /he'll;"o/ `)).toBe("hello");
+
+    test("cleans a complex mix of unwanted characters", () => {
+        expect(sanitizeText(` /he'll;"o/ `)).toBe("hello");
     });
-  });
-  
-  
-  // ========================================================================
-  // 🧠 ANSWERS (Hidden Below)
-  // ========================================================================
-  
-  /*
-  function makeLowercase(str: string): string {
-    return str.toLowerCase();
-  }
-  
-  function splitByDash(str: string): string[] {
-    return str.split("-");
-  }
-  
-  function removeSpaces(str: string): string {
-    return str.replace(/\s/g, "");
-  }
-  
-  function trimEdges(str: string): string {
-    return str.trim();
-  }
-  
-  function cleanSymbols(str: string): string {
-    return str.replace(/[\/"'`;]/g, "");
-  }
-  */
+});
+
+
+// ANSWERS
+
+/*
+function convertToLowercase(input: string): string {
+    return input.toLowerCase();
+}
+
+function divideByHyphen(input: string): string[] {
+    return input.split("-");
+}
+
+function eraseSpaces(input: string): string {
+    return input.replace(/\s/g, "");
+}
+
+function clipWhitespace(input: string): string {
+    return input.trim();
+}
+
+function sanitizeText(input: string): string {
+    return input.replace(/[\/"'`;]/g, "");
+}
+*/
+
