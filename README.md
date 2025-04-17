@@ -1,28 +1,28 @@
-# 📘 Coding Practice
 
-A TypeScript-based project designed to help you practice core coding concepts through daily exercises. This project includes coding challenges with corresponding tests, covering topics like functions, loops, arrays, interfaces, and classes.
+# 📘 TypeScript AI Daily Coding Practice
+
+A lightweight TypeScript project for daily practice of core coding concepts. Includes structured challenges with tests covering topics like functions, arrays, loops, interfaces, and more.
 
 ---
 
 ## 🚀 Features
 
-- 📝 **Practice coding concepts** with structured challenges.
-- ✅ **Automated tests** to verify your solutions.
-- 🔄 **Reset functionality** to restore exercises for fresh attempts.
-- 🧩 **Covers key programming concepts**: Functions, Loops, Arrays, Interfaces, Classes, and State Management.
+- 🧠 **Fresh daily questions** with real-world examples  
+- ✅ **Built-in tests** for instant feedback  
+- ♻️ **Reset system** to restore original exercises  
+- 🛠️ **Topics include** functions, arrays, loops, objects, classes, and APIs  
 
 ---
 
-## 🛠️ Installation & Setup
+## ⚙️ Setup
 
-### 📥 Install Dependencies
-
-1. Clone the repository:
+1. Clone the repo:
    ```bash
    git clone https://github.com/reecen9696/coding-practice
    cd coding-practice
    ```
-2. Install required packages:
+
+2. Install dependencies:
    ```bash
    npm install
    ```
@@ -31,65 +31,63 @@ A TypeScript-based project designed to help you practice core coding concepts th
 
 ## 🏃‍♂️ Usage
 
-### ✅ Run Tests
-
-To execute all tests and check your solutions:
+### ✅ Run all tests
 ```bash
 npm test
 ```
 
-### 🔄 Reset Practice Files
-
-Restore exercises to their original state:
+### ♻️ Reset challenges
+Resets the `Tests/` folder to its original state:
 ```bash
 npm run reset
 ```
 
----
-
-## 🧪 Available Scripts
-
-| Command         | Description                                 |
-| --------------- | ------------------------------------------- |
-| `npm test`      | Runs all test files to check solutions     |
-| `npm run reset` | Resets exercises to their original state  |
+### 🔄 Regenerate new questions (via OpenAI)
+Overwrite files in `OriginalTests/` with fresh variations:
+```bash
+npm run generate
+```
 
 ---
 
-## 🧩 Concepts Covered
+## 🧪 Scripts
 
-✅ **Functions**  
-🔄 **Loops**  
-📦 **Arrays**  
-🏷️ **Interfaces**  
-🏗️ **Classes**  
-⚡ **State Management (`useState`)**  
-🌐 **API Calls (`fetch` & Axios)**  
+| Command            | What it does                                      |
+| ------------------ | ------------------------------------------------- |
+| `npm test`         | Run all Jest tests                                |
+| `npm run reset`    | Reset `Tests/` to match `OriginalTests/`          |
+| `npm run generate` | Rewrite all original questions via OpenAI API     |
+
+---
+
+## 💡 Concepts Covered
+
+- 🔁 **Loops**
+- 🔣 **Conditionals (if/else, switch, ternary)**
+- 🧮 **Functions**
+- 📦 **Arrays**
+- 🗂️ **Objects & Interfaces**
+- 🧱 **Classes**
+- 🌐 **Basic API calls**
 
 Each challenge includes:
-- A **question prompt**  
-- A **starter function/class**  
-- Space to **write your answer**  
-- **Automated tests** to verify correctness  
+- Prompt  
+- Starter function  
+- Editable solution space  
+- Unit tests
 
 ---
 
-## ✨ Example Challenge
+## ✨ Sample Challenge
 
-```typescript
+```ts
 // 📄 QUESTION:
-// Create a function named "greet" that takes a string parameter "name"
-// and returns a greeting string (e.g., "Hello, Reece").
+// Create a function "greet" that takes a string name
+// and returns a greeting like "Hello, Reece".
 
-// 🧩 GENERIC FUNCTION:
-// function greet(name: string): string {
-//   return `Hello, ${name}`;
-// }
-
-// 📝 YOUR ANSWER:
 export function greet(name: string): string {
   return `Hello, ${name}`;
 }
 ```
 
-✅ Run `npm test` to check if your solution passes.
+Run `npm test` to verify.
